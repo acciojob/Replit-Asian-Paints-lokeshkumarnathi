@@ -1,1 +1,43 @@
-/*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#grid-container {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+#grid-item {
+  border: 1px solid black;
+}
+
+.grid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: transparent;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px;
+  width: 120px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
